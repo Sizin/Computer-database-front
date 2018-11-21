@@ -1,4 +1,4 @@
-<h1>Company</h1>
+<h1 id="nassim">Company</h1>
 
 <div class="example-button-row">
   <a href="" routerLink='/companies/add'>
@@ -12,7 +12,7 @@
 
 <mat-selection-list [(ngModel)]="selectedCompanies" (ngModelChange)="onCompanyChange($event)">
   <mat-list-option *ngFor="let company of companies" [value]="company">
-    <a href="" routerLink="/companies/update/{{ company.id }}">{{company.name}}</a>
+    <a class="linkTableCell" href="" routerLink="/companies/update/{{ company.id }}">{{company.name}}</a>
   </mat-list-option>
 
 </mat-selection-list>
